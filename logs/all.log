@@ -80,3 +80,5 @@
 {"level":"error","message":"error Something went wrong","service":"app.js","timestamp":"2024-01-30T12:03:53.160Z"}
 {"level":"info","message":"Hello World","service":"app.js","timestamp":"2024-01-30T12:03:58.474Z"}
 {"level":"error","message":"error Something went wrong","service":"app.js","timestamp":"2024-01-30T12:03:58.477Z"}
+{"level":"info","message":"Hello World","service":"app.js","timestamp":"2024-01-30T12:17:20.738Z"}
+{"level":"error","message":"error Something went wrong","service":"app.js","timestamp":"2024-01-30T12:17:20.740Z"}

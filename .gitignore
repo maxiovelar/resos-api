@@ -10,3 +10,6 @@ mongo/
 # Ignore system files
 .DS_Store
 Thumbs.db
+
+# Ignore coverage
+coverage/

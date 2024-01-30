@@ -4,6 +4,9 @@
 # Ignore node modules
 node_modules/
 
+# Ignore dist
+dist/
+
 # Ignore Docker volumes
 mongo/
 
@@ -13,3 +16,6 @@ Thumbs.db
 
 # Ignore coverage
 coverage/
+
+# Ignore logs
+logs/

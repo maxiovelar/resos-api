@@ -21,16 +21,15 @@ export const logger = winston.createLogger({
 // `${info.level}: ${info.message} JSON.stringify({ ...rest }) `
 //
 
-// if (process.env.NODE_ENV !== 'production') {
-logger.add(
-  new winston.transports.Console({
-    format: winston.format.simple(),
-  })
-);
-// }
+if (process.env.NODE_ENV !== "production") {
+  logger.add(
+    new winston.transports.Console({
+      format: winston.format.simple(),
+    })
+  );
+}
 
 export const buildLogger = (service: string) => {
-  //--> service puede ser el archivo que quiero observar
   return {
     log: (message: string) => {
       logger.log("info", { message, service });

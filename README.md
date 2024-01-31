@@ -17,3 +17,7 @@ MONGO_DB_NAME=
 MONGO_USER=
 MONGO_PASS=
 ```
+
+3. Run the command `docker compose up -d`
+4. Populate the database running the command `npm run seed`
+5. Execute the command `npm run dev` to run the project on dev mode

@@ -16,6 +16,8 @@ MONGO_URL=
 MONGO_DB_NAME=
 MONGO_USER=
 MONGO_PASS=
+
+NODE_ENV=development
 ```
 
 3. Run the command `docker compose up -d`

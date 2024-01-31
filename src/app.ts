@@ -1,6 +1,7 @@
-import { buildLogger, envs } from "./config/plugins";
+import { envs } from "./config/plugins";
 import { MongoDatabase } from "./data/mongo";
-import { Server } from "./server";
+import { AppRoutes } from "./presentation/routes";
+import { Server } from "./presentation/server";
 
 (async () => {
   main();
@@ -12,12 +13,6 @@ async function main() {
     dbName: envs.MONGO_DB_NAME,
   });
 
-  Server.start();
+  const server = new Server({ port: envs.PORT, routes: AppRoutes.routes });
+  server.start();
 }
-
-//TODO: Implement logger wherever is needed
-const logger = buildLogger("app.js");
-logger.log("Hello World");
-logger.error("Something went wrong");
-
-console.log(`Server listening on port ${envs.PORT}`);

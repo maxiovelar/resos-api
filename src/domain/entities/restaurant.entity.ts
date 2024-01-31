@@ -11,7 +11,7 @@ export class RestaurantEntity {
     public createdAt: Date
   ) {}
 
-  public static fromObject(object: { [key: string]: any }) {
+  public static fromObject(object: { [key: string]: any }): RestaurantEntity {
     const { id, name, address, tags, hours, createdAt } = object;
     if (!id) throw new Error("Id is required");
     if (!name) throw new Error("Name is required");

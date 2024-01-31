@@ -1,14 +1,15 @@
-import { RestaurantEntity } from "../../entities/restaurant.entity";
+import { RestaurantDTO } from "../../dtos/restaurant.dto";
 import { RestaurantRepository } from "../../repositories/restaurant.repository";
 
 export interface GetRestaurantsByTextUseCase {
-  execute(text: string): Promise<RestaurantEntity[]>;
+  execute(text: string): Promise<RestaurantDTO[]>;
 }
 
 export class GetRestaurantsByText implements GetRestaurantsByTextUseCase {
   constructor(private readonly repository: RestaurantRepository) {}
 
-  execute(text: string): Promise<RestaurantEntity[]> {
-    return this.repository.findByText(text);
+  async execute(text: string): Promise<RestaurantDTO[]> {
+    const entities = await this.repository.findByText(text);
+    return entities.map((entity) => RestaurantDTO.fromEntity(entity));
   }
 }

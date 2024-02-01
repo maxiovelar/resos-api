@@ -1,5 +1,6 @@
 import express, { Router } from "express";
 import { buildLogger } from "../config/plugins/logger.plugin";
+import cors from "cors";
 
 interface Options {
   port: number;
@@ -19,6 +20,7 @@ export class Server {
   }
 
   async start() {
+    this.app.use(cors())
     this.app.use(this.routes);
 
     this.app.listen(this.port, () => {

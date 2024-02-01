@@ -16,13 +16,11 @@ export class RestaurantsController {
       .execute()
       .then((restaurants) => {
         logger.log("Restaurants fetched");
-        restaurants.length === 0
-          ? res.status(404).json({ error: "Not found" })
-          : res.status(200).json(restaurants);
+        res.status(200).json(restaurants);
       })
       .catch((error) => {
         logger.error("Error fetching restaurants");
-        res.status(400).json({ error });
+        res.status(500).json({ error });
       });
   };
 
@@ -36,13 +34,11 @@ export class RestaurantsController {
       .execute(text as string)
       .then((restaurants) => {
         logger.log("Restaurants fetched");
-        restaurants.length === 0
-          ? res.status(404).json({ error: "Not found" })
-          : res.status(200).json(restaurants);
+        res.status(200).json(restaurants);
       })
       .catch((error) => {
         logger.error("Error fetching restaurants");
-        res.status(400).json({ error });
+        res.status(500).json({ error });
       });
   };
 }

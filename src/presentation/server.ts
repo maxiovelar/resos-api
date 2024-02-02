@@ -20,7 +20,9 @@ export class Server {
   }
 
   async start() {
-    this.app.use(cors())
+    this.app.use(cors());
+    this.app.use(express.json());
+    this.app.use(express.static("public"));
     this.app.use(this.routes);
 
     this.app.listen(this.port, () => {

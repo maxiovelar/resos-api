@@ -283,7 +283,7 @@ export const restaurants = [
   },
   {
     name: "Retro Rendezvous",
-    image: "vegan-4809593_640.jpg",
+    image: "wine-7046276_640.jpg",
     address: "789 Nostalgia Avenue, Vintageville",
     tags: ["Diner", "Retro", "Classic"],
     hours: { open: "07:00", close: "21:00" },

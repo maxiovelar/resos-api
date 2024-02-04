@@ -24,7 +24,6 @@ describe("logger.plugin.ts", () => {
     expect(winstonLoggerMock).toHaveBeenCalledWith(
       "info",
       expect.objectContaining({
-        // expect.objectContaining() is useful when we are waiting for an object and we only care to test some elements of it
         level: "info",
         message,
         service,
@@ -44,7 +43,6 @@ describe("logger.plugin.ts", () => {
     expect(winstonLoggerMock).toHaveBeenCalledWith(
       "error",
       expect.objectContaining({
-        // expect.objectContaining() is useful when we are waiting for an object and we only care to test some elements of it
         message,
         service,
       })

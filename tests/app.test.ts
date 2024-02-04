@@ -1,14 +1,7 @@
-// import { envs } from "../src/config/plugins";
-// import { Server } from "../src/presentation/server";
-
-// jest.mock("../src/presentation/server");
-
-// describe("app.ts", () => {
-
 import { envs } from "../src/config/plugins";
 import { Server } from "../src/presentation/server";
 import { MongoDatabase } from "../src/data/mongo";
-import "../src/app"; // Import the file to be tested
+import "../src/app";
 
 jest.mock("../src/presentation/server");
 jest.mock("../src/data/mongo");

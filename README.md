@@ -9,6 +9,7 @@ This is the Back-End project for the resOS technical assessment.
 
 ```
 PORT=PORT
+PUBLIC_PATH=public
 
 PROD=false
 

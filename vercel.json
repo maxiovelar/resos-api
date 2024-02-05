@@ -3,7 +3,7 @@
   "builds": [{ "src": "app.js", "use": "@vercel/node" }],
   "redirects": [
     {
-      "source": "/",
+      "source": "/(.*)",
       "destination": "/api/restaurants"
     }
   ]

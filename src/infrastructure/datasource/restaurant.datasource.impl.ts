@@ -1,4 +1,4 @@
-import { RestaurantModel } from "../../data/mongo";
+import { RestaurantModel } from "../../data/mongodb";
 import { RestaurantDatasource, RestaurantEntity } from "../../domain";
 
 export class RestaurantDatasourceImpl implements RestaurantDatasource {

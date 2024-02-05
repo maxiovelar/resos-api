@@ -1,5 +1,5 @@
 import { buildLogger, envs } from "../../config/plugins";
-import { MongoDatabase, RestaurantModel } from "../mongo";
+import { MongoDatabase, RestaurantModel } from "../mongodb";
 import { restaurants } from "./data";
 
 (async () => {

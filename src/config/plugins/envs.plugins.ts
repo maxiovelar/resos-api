@@ -2,7 +2,7 @@ import "dotenv/config";
 import * as env from "env-var";
 
 export const envs = {
-  PORT: env.get("PORT").asPortNumber(),
+  PORT: env.get("PORT").default(8080).asPortNumber(),
   PUBLIC_PATH: env.get("PUBLIC_PATH").default("public").asString(),
   PROD: env.get("PROD").asBool(),
   MONGO_URL: env.get("MONGO_URL").required().asString(),

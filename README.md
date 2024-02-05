@@ -8,7 +8,7 @@ This is the Back-End project for the resOS technical assessment.
 2. Set the environment variables
 
 ```
-PORT=PORT
+PORT=
 PUBLIC_PATH=public
 
 PROD=false
@@ -28,6 +28,12 @@ NODE_ENV=development
 ## Project Overview
 
 This project is built with Node + ExpressJS + TypeScript. The data is stored in a MongoDB database.
+
+## Endpoints
+
+`/api/restaurants` - Returns the entire list of restaurants.
+
+`/api/restaurants/search?text=` - Returns a list of restaurants matching your query.
 
 ### Scalability
 

@@ -21,7 +21,7 @@ MONGO_PASS=
 NODE_ENV=development
 ```
 
-3. Run the command `docker compose up -d`
+3. Run the command `docker compose up -d` to init the MongoDB service.
 4. Populate the database running the command `npm run seed`
 5. Execute the command `npm run dev` to run the project on dev mode
 

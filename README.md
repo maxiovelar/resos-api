@@ -1,6 +1,6 @@
 # resOS API
 
-This is the Back-End project for the resOS technical assessment.
+This is the Back-End project for the resOS app.
 
 ## Running the App on dev mode following the next steps:
 

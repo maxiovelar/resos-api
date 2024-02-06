@@ -41,6 +41,8 @@ Thanks to the clean architecture and Domain-Driven Design, the application is de
 
 ### Potential for Improvement
 
+- **Pagination**: Add pagination to the API response for the restaurants list. This will help to better manage and organize data in the front-end.
+
 - **Unit Tests**: Apply unit tests to ensure robustness and reliability, potentially including integration tests and snapshot testing for components.
 
 For more details, refer to the individual files in the codebase.
